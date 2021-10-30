@@ -16,10 +16,10 @@
             <img src="images/logo.png" class="logo">
             <ul>
                 <li><img src="images/home-icon.png" ></li>
-                <li><img src="images/page-icon.png" ></li>
+                <li><img src="images/hvideo.png" ></li>
                 <li><img src="images/groups-icon.png" ></li>
                 <li><img src="images/inbox.png" ></li>
-                <li><img src="images/video.png" ></li>
+                <li><img src="images/hvideo.png" ></li>
             </ul>
         </div>
         <div class="nav-right">
@@ -28,11 +28,60 @@
                 <img src="images/search.png" alt="">
                 <input type="text" placeholder="search">
             </div>
-            <div class="nav-user-icon online">
-                <img src="images/profile.png">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()" >
+                <img src="images/profile-pic.png">
             </div>
 
         </div>
+
+         <!-----------Seetings-Menu--------->
+        <div class="settings-menu">
+
+            <div id="dark-btn" ">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>MTH Tanjim</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr> 
+
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon" >
+                    <a href="#">Seetings & Privacy <img src="images/arrow.png" width="10px" alt=""> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon" >
+                    <a href="#">Help & Supppot<img src="images/arrow.png" width="10px" alt=""> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon" >
+                    <a href="#">Display & Accessiblity<img src="images/arrow.png" width="10px" alt=""> </a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon" >
+                    <a href="#">Log Out<img src="images/arrow.png" width="10px" alt=""> </a>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+
     </nav>
 
     <div class="container">
@@ -44,7 +93,7 @@
                 <a href="#"><img src="images/group.png" alt="">Group</a>
                 <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
                 <a href="#"><img src="images/watch.png" alt="">Watch</a>
-                <a href="#">See More</a>
+                <a href="#"><i class="fad fa-angle-down"></i>See More</a>
             </div>
             <div class="shortcut-links">
                 <p>Your Shortcut</p>
@@ -52,7 +101,9 @@
                 <a href="#"><img src="images/shortcut-2.png" alt="">Web Design</a>
                 <a href="#"><img src="images/shortcut-3.png" alt="">Full Stack Developer</a>
                 <a href="#"><img src="images/shortcut-4.png" alt="">Website Experts</a>
+                <a href="#"><i class="fal fa-caret-down"></i>See More</a>
             </div>
+            
             
         </div>
     <!-----------main-sidebar start--------->
@@ -90,7 +141,7 @@
                     <img src="images/profile-pic.png">
                     <div>
                         <p>MTH Tanjim</p>
-                        <small>Public <i class="fas fa-caret-down"></i></small>
+                        <small>Public<i class="fas fa-caret-down"></i></small>
                     </div>
                 </div>
  
@@ -135,6 +186,39 @@
                     </div>
 
             </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/page-profile-1.jpg">
+                        <div>
+                            <p>ICC - International Cricket Council <img src="images/bicon.png" alt=""> </p>
+                            <span>August 14 2021 12:37 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> Big Dream11 scores on the board after yesterday's fixtures 🤯
+                    Did you have any of these players in your team? Get involved now <a href="#">👉 bit.ly/T20WC-D11</a> 
+                    <br><a href="@">#T20WorldCup</a></p>
+                    <img src="images/feed-image-6.jpg" class="post-img" >
+            
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png" alt="">220</div>
+                            <div><img src="images/comments.png" alt="">45</div>
+                            <div><img src="images/share.png" alt="">13</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt=""><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+
+            </div>
+
+
             <div class="post-container">
                 <div class="post-row">
                     <div class="user-profile">
@@ -164,6 +248,7 @@
                     </div>
 
             </div>
+
             <div class="post-container">
                 <div class="post-row">
                     <div class="user-profile">
@@ -317,14 +402,30 @@
                 </div>
                 <p>Nora Fatlark </p>
             </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Pavel Rana</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Jaklin Jassika</p>
+            </div>
+
             
-
-
-
-
-
+            
         </div>
     </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - MTH SolutionBee</p>
+
+    </div>
+    
+    <script src="script.js"></script>
   
 </body>
 </html>
